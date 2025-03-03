@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal HTML Form</title>
+</head>
+<body>
+
+    <h1>Registration Form</h1>
+    <form action="/submit" method="post">
+        <input type="text" placeholder="Name" name="name" required><br>
+        <input type="text" placeholder="Username" name="username" required><br>
+        <input type="password" placeholder="Password" name="password" required><br>
+        <input type="date" name="dob" required><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male" required> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other<br>
+
+        <textarea placeholder="Address" name="address" required></textarea><br>
+        <input type="checkbox" name="same_as_address"> Same as Address<br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
